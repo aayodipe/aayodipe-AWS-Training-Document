@@ -1,0 +1,18 @@
+Introduction to Python
+Python Data types
+Python Variables
+Conditional Logic
+Logical Operations
+Loops
+Functions
+Returns statement
+Modules in Python
+AWS Boto 3( Main Topic)
+
+
+Location2020***
+
+Access Key ID:
+AKIATPC6VIWGUOY7GUNO
+Secret Access Key:
+aC+OflZ/GMjoz4z2UR/9WFQi/ZEi4HKqF1ryivTW

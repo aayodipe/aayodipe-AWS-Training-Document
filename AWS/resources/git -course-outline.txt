@@ -1,0 +1,26 @@
+https://git-scm.com/docs/git
+==========================
+Version Control
+===============
+
+Introduction to version control
+==================================
+** Your daily task is to create things, save things, modified things, save things again and redo the process again and again, This is where version control works.
+So version control is the system that manages the changes that you made in your code. Everytime that you make a changes in your code, the VC records the changes. 
+
+case Study: If you are working on a project, you create the version 1, then the version 2 and then the version 3. Before the third version, your code was working correctly but after you added more code and save that as version 3 the feature stopped working, then you have 2 options. 1. Manually remove code that you added for the version 3 or you roll back to version 2. 
+
+===========================================
+Type of Version Control System
+--------------------------------
+
+Introduction to Git
+Git Lifecycle & How git works
+Common git command
+Working with git branches
+Working with git rebase
+resolving git Conflicts
+Git Workflow
+Forking in Github
+
+

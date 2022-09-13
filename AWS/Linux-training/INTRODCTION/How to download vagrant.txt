@@ -1,0 +1,16 @@
+How to Download Vagrant on your window system
+==================================
+Step 1: Go to Vagrantup.com
+Step 2: Click on the Download vagrant, then download Amd64
+
+Step 3: Locate where the folder was downloaded. Is always on your download folder, then Install the vagrant software by double clicking on it. 
+
+Step 3. Alternative Install the package
+Step 4. Follow the download instruction.
+Step 5. Make a folder on your desktop and open up a terminal and change directory(cd) into the folder
+step 6: Initialize the vagrant software by running "vagrant init". This will download Vagrantfile in your folder.
+Step 7: Open the Vagrantfile and change the config.vm.box from base to centos/7
+
+step 8: Run vagrant up
+Step 9: Run Vagrant ssh
+Step 10 Go to window features on or off then enable/check virtual machine  platform.

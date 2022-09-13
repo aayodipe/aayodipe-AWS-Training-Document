@@ -1,0 +1,20 @@
+{
+    "Name": "Data-Event",
+    "S3BucketName": "demo2391",
+    "IncludeGlobalServiceEvents": false,
+    "IsMultiRegionTrail": false,
+    "TrailARN": "arn:aws:cloudtrail:us-east-1:238569211277:trail/Data-Event",
+    "LogFileValidationEnabled": false,
+    "IsOrganizationTrail": false,
+    "ResponseMetadata": {
+        "RequestId": "0ede0c27-3e15-4f40-9e19-0abd98b3518c",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "x-amzn-requestid": "0ede0c27-3e15-4f40-9e19-0abd98b3518c",
+            "content-type": "application/x-amz-json-1.1",
+            "content-length": "242",
+            "date": "Mon, 05 Sep 2022 23:29:04 GMT"
+        },
+        "RetryAttempts": 0
+    }
+}

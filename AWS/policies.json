@@ -1,0 +1,128 @@
+// Allow an IAM Users to view their account Information
+
+
+Root Users
+=============
+Characteristic of a root users
+tasks that  can only be performed by Root User 
+Mode of accessing account as Root User - Console, CLI and SDK
+
+Identity and access management
+===============================
+IAM Resources
+============
+IAM Users
+IAM Group 
+IAM Role 
+Policy = An Object that defines Permission
+    - AWS Managed Policies
+    - Customer Managed Policies
+    - Inline Policies
+Policy Template
+
+
+Identity-base policy -- attached to a user
+Resource-based -- policy --- resources
+Permission Boundary --           Segun --- manager ----right to employ other person --- No right to employ another manager, no right increse employee salary 
+Service control policies(SCP) Organization account == 
+
+
+Thecornelis inc
+
+5 Accounts  Organization 
+
+Account A==== Management Account (rules Only ec2 service in allow)=== SCP- service control policies
+Account B   $50
+Account C Compliance 
+Account D- developer   Enigneer 
+Account E devops 
+Account F   Audit Organizational Unit
+
+
+"Version": "2012-10-17"                        //===> new Version or "2008-10-17"- Old Version
+"id" :"cd3ad3d9-2776-4ef1-a904-4c229d1642ee"   //===> (Optional Identifier) Not required by all service
+"Statement": [                                //===> can be single statement or an array of multiple statements
+    {
+        "Sid":"1",
+        "effect": "Allow",                   // Allow or Deny
+        "Principal":"*",                     //element in a resource-based(IAM, S3) JSON policy to specify the principal that is allowed or denied access to a resource. 
+        "Action": "ec2:StartInstances",    //"Action": [ "sqs:SendMessage", "sqs:ReceiveMessage", "ec2:StartInstances", "iam:ChangePassword", "s3:GetObject" ]
+        "NotAction": "s3:DeleteBucket",       *            // "Action": [ "sqs:SendMessage", "sqs:ReceiveMessage", "ec2:StartInstances", "iam:ChangePassword", "s3:GetObject" ]
+        "Resources":"arn:aws:s3:::DOC-EXAMPLE-BUCKET/*"                     //The Resource element specifies the object or objects that the statement covers. Statements must include either a Resource or a NotResource element. You specify a resource using an ARN
+                                            //  For information about how to specify a resource, refer to the documentation for the service you want to write a statement.
+        "condition":
+
+        }]
+        
+
+        {
+            "Version": "2012-10-17",
+            "Statement": {
+                "Sid": "1",
+                "Effect":"Allow",
+                "Action":"s3:*",
+                "Principal" 
+                "resources":["arn:aws:s3:::demo2391", "arn:aws:s3:::demo2391/*
+                ]
+            }
+        }
+
+
+       Solution to assignment
+        ==========================================================
+ 
+
+
+
+
+
+
+
+        //"Resource": "arn:aws:s3:::DOC-EXAMPLE-BUCKET/*/test/*"
+// https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html
+Sample of Principal
+===================
+AWS account and root user
+"Principal": { "AWS": "123456789012" }
+"Principal": { "AWS": "arn:aws:iam::123456789012:root" }
+
+IAM roles
+"Principal": { "AWS": "arn:aws:iam::AWS-account-ID:role/role-name" }
+Role sessions
+"Principal": { "AWS": "arn:aws:sts::AWS-account-ID:assumed-role/role-name/role-session-name" }
+IAM users
+"Principal": { "AWS": "arn:aws:iam::AWS-account-ID:user/user-name" }
+Federated user sessions
+"Principal": { "AWS": "arn:aws:sts::AWS-account-ID:federated-user/user-name" }
+AWS services
+"Principal": {
+    "Service": [
+        "ecs.amazonaws.com",
+        "elasticloadbalancing.amazonaws.com"
+   ]
+}
+All Principal
+"Principal": "*"
+"Principal" : { "AWS" : "*" }
+
+
+
+
+
+
+Hands On                                                Home Work
+========                                              =============
+1. Create 5 users                                           Create 10 Users ( use 10 names that you know)
+2. Create 3 Groups                                          Create 4 groups( Admin, Security, Developers and Architects)          
+3. Create 3 Roles(For EC2, and AWS Account)                 Create 5 Roles(EC2AssumeRole, AdministratorFullAccess, S3EC2ReadOnlyAccess, more other 2)
+4. Create 4 Policy(Inline, AWS and Customer Managed)        Create 6 Policies
+5. Add Users to Group                                       Add 1 User to Admin, 2 Users to Security,5 Users to Developers and 2 user to Architect
+6. Attached 3 policies to User                              Attached Policies to (User, Group and Role)
+7. Attached Policies to Group
+8. Attached Policies to Role
+
+Policy Evaluation
+======================
+
+
+

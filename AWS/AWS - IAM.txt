@@ -1,0 +1,263 @@
+Introduction to the Root User
+==============================
+This is the Super User or User with unlimited access to tht AWS Account. It is automatically created when you register for an AWS account. The Root User access AWS Account using the email address and password that you provide during registeration.
+
+Root User Characteristics
+==========================
+Email address as Username(Email address associated to the user)
+
+Generic Login URL - Generic to all AWS Customers - aws.amazon.com
+
+Access to unique Tasks that can only be perform by Root user only
+
+Use to receive communication from AWS
+
+Root Account properties can only be modified with the root user
+
+Email used as a root user on one account can never be use for another account again
+
+
+	Tasks that required Root Users
+=======================================
+1. Create the first Administrator user 
+
+2. Perform listed task
+	a. Change your account Settings
+	b. Restore IAM user permission or password
+	c. Activate IAM access to the Billing and Cost Management console
+	d. Close your AWS account
+	e. Change AWS Support Plan and cancel support plan
+	f. Register as a Seller
+	g. Configure MFA delete for S3 bucket
+	h. Sign up for GovCloud
+	i. Edit and delete an S3 bucket policy that includes and invalid VPC ID or VPC endpoint ID.
+
+
+Root User Credentials
+=========================
+a. Username(Email Address)  and Passwords (Required)
+b. API Keys(Access Key ID and Secret Access Key) - Not Recommended
+c. MFA (Recommended)
+
+
+Securing The Root Users
+==========================
+1. Limit the Task that you do with your Root User
+2. Lock away your AWS account Root user access Keys
+
+3. Never share your AWS account root users password or access keys with anyone
+
+4. Use Strong Passwords
+5. Enable Multi-factor Authentication
+
+
+Identity and Access Management-IAM
+===================================
+
+With IAM, account owner or account administrator can give access to other users, with specific permission by creating a username and password for them. You can also federate existing identities(like there gmail, yahoomail or corporate login credential) into AWS.
+
+Feature of IAM 
+==================
+Authentication: Who is that user?
+Authorization: What can you do?
+
+Other Features of IAM
+=====================
+1. Shard access to your Account
+2. Granular Permission
+3. Secure access to AWS resources for applications that run on Amazon EC2 instances
+4. Multi-Factor Authentication(MFA)
+5. Identify federation
+6. Identity Information for Assurance- Let you know who does what by reporting to Cloudtrail
+7. Eventual consistence- It certainly going to happen but not immediately ( like 1 minutes delay)
+8 Is Free
+
+
+Accessing IAM 
+===============
+Three are multiple ways to access IAM 
+
+1. Management Console (Username and Password)
+2. Programmatic Access( Access Key Id and Secret Access Key)
+3. AWS Software development Kit(SDK)( Python -boto3)
+4. IAM HTTPS API( For Application)
+
+
+TERMS of IAM
+================
+There are some terms that you need to be farmiliar with in AWS IAM 
+
+a. IAM Resources
+		- Users, 
+     - Groups,  
+     - Roles, 
+     - Policy, 
+     - Identify Providers Object stored on IAM
+
+
+b . Identities: IAM Resources(Users, Groups and Roles) that can be use to Identify or group an IAM Users.Also you can use tag an IAM Resources
+
+c. Entities : The IAM Resources(Role and Users) that AWS use for Authentication.
+
+
+USER
+======
+This is the entity that user create  using a username and a password. A user consist of a Name and a Credentials( Password or An Access Keys)
+
+A user can be identified in AWS account by her name, an ARN or A unique Identifier(only user by API)
+
+Example:
+ By Name: John, Williams,iyanda, Nanor
+ By ARN ( Amazon Resource name): 
+ arn:aws:iam::account -ID:user/John
+ arn:aws:iam::account -ID:user/williams
+ arn:aws:iam::account -ID:user/iyanda
+ arn:aws:iam::account -ID:user/nanor
+
+A user can access an AWS account using:
+ username and password  and/or Access Keys and MFA. 
+
+
+GROUPS
+======
+An IAM user group is a collection of one or multiple users. It's is another identity on AWS. The advantage of a group is that it let you assign permission to multiple people as a group.
+
+A group can contain one or multiple user and a group can be a member of another group.
+
+
+ROLES
+=======
+
+An IAM role is also an Identity that you can create in your account that has specific permissons. This is similar to AWS Users that has permission assigned to it which specified what person or application that assume the role can do on your AWS Account. However, it is different than AWS User because instead of been assigned to a specific person or an application, any person or any application in the specified category can assume the role. Thus, coin the word, Assume role.
+
+
+ACCESS MANAGEMENT FOR AWS RESOURCES
+=====================================
+
+AWS IAM is a web service that help you to securely control access into your account.
+
+When a principal(users, application, or federated user) make a request in AWS, The AWS enforcement code(security application) check if the principal is authenticated(signed In) and authorized(has permission), If the principal is authenticatedand autorize then it allow the action otherwise, it deny the actions.
+
+
+POLICIES AND PERMISSON
+======================
+
+POLICY
+=========
+IAM policies define the permissions for an action or an operation regardless how the action or operation was carried out. For example, if a policy allows the createuser action, then a user with that policy can create user from the AWS Management Console, the AWS CLI, or the AWS API.
+
+
+PERMISSION
+==========
+The set of action(s) that a user can perform on AWS Account. A permission can have multiple policies attached to it. You Use IAM policies to grant permissions. You can assign an existing policy or create a new one.
+
+TYPE OF POLICIES
+=====================
+
+1. Identity-based policies - This can be managed or inline policy that is attached to an Identity such as user, group or role. This grant permission to an Identity
+
+Managed Policies- Standalone policies that you can attached to multiple users.
+   - Type of Managed Policies
+     a. AWS Managed Policies
+		b. Customer Managed Policies
+
+Inline Policies- Policies that can is met only for a specific user. Can not be attached to other users
+
+2. Resource-based policies - An inline policies that is attach to a resources. E,g Amazon S3 Bucket policies. There is no managed resources-ased policies.
+
+3. Permission boundaries: A manage policy that defines the maximum of permisson s that the identity-based policies can grant. This is use to prevent priviledge escalation.
+
+4. Organizations SCP: An AWS Organizations service control policy (SCP) to define the maximum permissions for account members of an organization or organizational unit (OU)
+
+5. Access Controls Lists(ACLs)- Use ACLs to control which principals in other accounts can access the resource to which the ACL is attached
+
+6. Session Policies: Session policies limit the permissions that the role or user's identity-based policies grant to the session.Session policies limit permissions for a created session, but do not grant permissions
+
+
+
+https://238569211277.signin.aws.amazon.com/console
+
+johndoe      
+abcd123***
+permission ==can create user and add permission to user 
+
+PRINCIPAL 
+=========
+A principal is a person or application that can make a request for an action or operation on an AWS resource.
+
+REQUEST
+========
+
+ The Request sent by a principal includes:
+ 	a. Actions or Operation user want to perform
+	b. Resources on which the action would be performed
+  c. Principal - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ACCESSing YOUR AWS ACCOUNT
+=============================
+a. Console
+b. Programmatic Access
+c. Externally Authenticated users(identify Federation)
+
+
+
+Console Access
+==============
+
+As a root user
+	You log in with root user email and password( optional MFA)
+As a IAM user
+	You log in with Account Number(or Alias Name), user name and password(optional MFA)
+
+Programmatic access
+====================
+
+
+
+
+
+
+
+
+Allowing Other people into Your Account
+======================================
+Authetication: Proofing an Identity
+Authorization: Determine whether there are permission to perform an action.
+
+
+
+
+IAM
+========
+
+
+
+
+

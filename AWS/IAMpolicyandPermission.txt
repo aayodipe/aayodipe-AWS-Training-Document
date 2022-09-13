@@ -1,0 +1,40 @@
+arn ==> amazon resource name
+
+arn:aws:iam::account -ID:user/johndoe
+arn:aws:ec2::account -ID:group/
+
+IAM --- 
+
+IAM Resources
+==============
+user---
+group---       
+role----
+policies 
+permission
+
+
+
+IAM Identity
+============
+user---   johndoe
+group---  developer   
+role----   solution architect
+
+IAM Entity
+===========
+User ------Johnjoe
+Role ------Developer
+
+
+IAM PRincipal
+==============
+Human being
+Application
+Federated Identity 
+Account
+
+AKIATPC6VIWGTIWWXOEA
+zqqufk9QoJH30WyHYNpf6Pr/2qdgk3WVVuL0miqB
+
+https://238569211277.signin.aws.amazon.com/console

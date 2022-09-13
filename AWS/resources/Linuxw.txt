@@ -1,0 +1,143 @@
+Linux
+========
+
+Introduction to Linux
+File System
+Navigations in Linux
+Common Commands in Linux
+User Management
+Permission in Linux
+Package Management
+
+
+
+Class 1 
+=======
+Introduction to Linux OS. 
+
+Let's talk about Linux. Before we go deep about linux, let's take a step back and talk about computer as a whole. 
+
+Computer is made up of multiple parts. 
+	* The Hardware
+	* The Software
+	*
+
+The Hardware comprise of the 
+	- The CPU - 
+			* Control Unit
+			* Arithmetic Logi Unit
+			* The Cache
+			* The Buses
+			* Registers 
+			* Storage Units
+	- RAM 
+	- Hard Drive
+	- Solid-State Drive(SSD) * 
+	- Network Interface card 
+	- ETC
+The Software comprise 
+	- The Operating System(OS)	
+	- Device Drivers
+	- Utilities
+	- Applicatin or User Downloaded Softwares such as Microsoft WOrd,Spreedsheet, Graphics applications  
+	- Etc
+
+
+The part of the computer that is available to the enduser is the Applications, or users downloaded software such as  word, spread sheet, google chrome. The Application needs the physical component of the computer to perform whatever task you ask them to do, But they can not communicate directly with this physical component, so then need interpreter or thing that speaks both the language of the user's application and the computer hardware, and that is where the OS comes in.
+
+
+The OS manages all of the software and hardware on the computer. Most of the time, there are multiple or different computer programs running at the same time and they all need to access your computer CPU, Memory  and storage. The OS condinates all of this to make sure each program gets what it needs.
+
+Type of OS
+============
+There are multiple OS out there.The Window, Mac OS and Linux are the most popular.
+
+For this course, we are going to be looking at the Linux Operating System.
+
+
+LINUX
+===============
+
+There are multiple type(distribution) of Linux OS. 
+ 
+	* The Debian ( Ubuntu and Linux Mint)
+	* Red Hat Enterprise ( RHEL) - Santo/7
+
+
+Every Linux distribution installs and manages package differently. And they use diffent package management tools.
+
+
+REDHAT Distribution
+===================
+ Common Commands  
+
+==============
+
+Pwd - Current Working Directory
+cd - Change Directory
+ls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** Linux is an open source operating system so user can change source code as per requirement whereas 
+
+** Windows OS is a commercial operating system so user doesn’t have access to source code
+
+
+Windows  Vs Linux File System
+===============================
+Microsoft windows files are stored in folders on different data drive/storage such as C:, D: and E: drive.
+
+While linux files are ordered in a tree structure starting with the ROOT directory. That is the /.
+
+The / directory is the start of the file system and it further branched out into various branches such as /bin, /root, /home etc.
+
+
+
+
+Linux file directory and common files
+=========================================
+
+/ - root directory
+/bin - Store binaries command that is meant to be run by normal users.
+/sbin - store binaries command that is only available for the super users.
+/etc - contains configuration files for 
+/home- every user created on linux have a directory called /Root.
+/root
+/run
+/mnt
+/

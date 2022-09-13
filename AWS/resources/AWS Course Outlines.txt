@@ -1,0 +1,169 @@
+Module 1 - AWS Building Block
+	- What is AWS
+	- The Shared Responsibility Model
+	- Open Our AWS Account
+
+Module 2 - AWS Global Infrastructure
+	- Data Centers and Availability Zones
+	- (Demo)Explore Availability Zone on the console.
+	- Regions and Local Zones
+	- Edge Location
+
+Module 3 - AWS Identity and Access Management
+	- AWS Account and Root user
+	- IAM Users 
+	- IAM Groups
+	- IAM Roles
+	- Federation Options
+	- Project( To be anounce)
+	- Documentations - (Students)
+
+Module 4 - AWS Policies and Permissions
+	- Permission Evaluation
+	- Policy Formats
+	- Identity-Based Policies
+	- Session-Based Policies
+	- Resources Based Policies(Intro)
+	- Projects(to be announce)
+	- Documentation(Student)
+	
+
+Module 5 - Accessing AWS Services
+	- AWS Service API Endpoints
+	- AWS Console 
+	- AWS Command line Interface ( CLI)
+	- AWS Software Development Kits(SDK) - Boto3
+	- Assume Role
+	- Documentations(Students)
+
+Module 6 AWS Elastic Compute Cloud( EC2)
+	- Introduction to EC2
+	- AWS EC2 Basics
+	- Amazon Machine Images - AMIs
+	- EC2 Key Pairs 
+	- EC2 Instance Type
+	- EC2 Metadata and User Data
+	- Elastic IP 
+	- Network Interface
+	- Security Groups
+	- EBS Storage
+	- EFS Storage
+	- Assignment
+	- Projects 
+	- Documentations
+
+Module 7 - AWS Elastic Load Balancing( for High Availability)
+
+	- Elastic Load Balancing Basics
+	- Type of Load Balancers
+	- Deploy Application Load Balancer -ALB
+	- Configure Redirects on ALB
+	- Network Load Balancer
+	- Gateway Load Balancer( No Hands-On)
+
+Module 8 - EC2 Auto Scaling ( For High Availability)
+	- Auto Scaling Basics
+	- Auto Scaling features
+	- Creating Target Group
+	- Deploying Auto Scaling
+	
+
+Module 9 AWS S3
+
+	- Intro to S3
+	- Amazon S3 Features
+	- S3 Bucket Access
+	- S3 Permissions
+	- s3 Lifecycle Operations
+
+Module 10 - AWS VPC NetWorks
+	- What is VPC
+	- VPC Subnets
+	- VPC Internet Access - Internet Gateway
+	- Network Access Control Lists
+	- VPC Endpoints
+	- vPC Peerings
+	- AWS Transis Gateway
+	- Site to Site VPN (Explain)
+	- AWS Direct Connect( Explain)
+	- AWS VPN (Explians)
+	- Documentations
+	- Projects
+
+Module 11 - AWS DNS Solutions 
+	- AWS Route 53 Basics
+	- AWS Route 53 Features
+	- Implementing Resilience with DNS
+	- Hybrid DNS Solutions
+	
+
+Module 14 - Amazon RDS and Aurora
+	- Introduction to Databases In AWS
+	- Amazon RDS Basics
+	- AMazon RDS Features
+	- Deploy RDS with Mysql
+	- Deploy Aurora Serverless
+	- Deploy a DynamoDB Table with Resilience
+	- Amazon Redshift features
+	- AWS DocumentDB Features
+	- AWS Nuptune Featues
+
+
+Module 15 - CloudFront
+
+	- CloudFronts
+	- Deploy CloudFront Distributions(Console)
+
+
+Module 16 - Amazon Athena
+	- Amazon Athena Basics
+	- Amazon Athena Features
+	- Athena Log Analysis
+
+Module 17 - AWS Organizations
+	- Organisations Basics
+	- Organization Features
+	- Organizations OU Management
+	- Organizations Deployment
+
+
+Module 18 - CloudWatch and Cloud trails
+	- Cloudwatch Basics
+	- Cloudwatch Features
+	- Cloudwatch Metrics
+	- Cloudwatch Logs Insight
+	- Cloudwatch Logs Metric Filter
+
+
+Module 19 SNS and SQS
+	- Amazon Simple Notification Services
+	- Creating and Subscribe to an SNS topic
+	- Amazon Simple Queue Services(SQS)
+	- 
+Medule 19 - Automations 
+	- Cloud Config Basics
+	- Cloud Config Deployments
+	- Event Bridge Basics
+	- Event Bridge Deployment
+	
+Module 20 - AWS Security
+
+	- Cloudtrail
+	- AWS GuardDuty
+	- Amazon Inspectors
+	- Security Hub
+	- AWS Applicatin WAF
+	- AWS Shield
+	- AWS Cerficate Manager
+	- AWS Secret Manager
+	- AWS Key Management
+
+Module 21 - Cost Management
+	- AWS Pricing Model
+	- AWS EC2 Pricing Calculator
+	- AWS Cost Explorer
+
+Module 22 - Budgets and Reports
+	- Cost Allocations
+	- Billing Alarms( First Topics)
+	- AWS Budgets

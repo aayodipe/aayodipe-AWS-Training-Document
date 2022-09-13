@@ -1,0 +1,12 @@
+Terraform
+
+============
+
+** Why Terraform
+** Provision resources with Terraform
+** How to Manage terraform State
+** How to Create Reusable Terraform( using Variables)
+** Infrastructure with Terraform Modules
+** Terraform Loops( count and for-Each) and If- Statement
+** Terraform Secret Management
+** How to Test Terraform Code
