@@ -1,4 +1,5 @@
-from turtle import clear
+
+from tokenize import group
 import boto3
 import json
 cloudtrail_client = boto3.client('cloudtrail')
@@ -19,3 +20,4 @@ response2 = cloudtrail_client.update_trail(
 )
 
 print(json.dumps(response2,indent = 4))
+c

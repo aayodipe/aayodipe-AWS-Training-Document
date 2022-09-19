@@ -1,0 +1,107 @@
+OS + Other application = AMI 
+ami-05fa00d4c63e32376
+
+Instance-type = Computer type (
+t2.micro
+
+Key-Pair 
+Demo-Saturday-key 
+
+
+Networking
+VPC = vpc-04d2538808bc06561
+Availability Zone = us-east-1a
+
+new an IP address
+new a security group
+ssh,https,http
+enable DNS Hostname
+
+
+
+AKIATPC6VIWGSGYUP2CN
+DOEbE3xJlHnXBYmebe8gdCQpb5KKF9c2uKcNXara 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security-Group is Stateful
+
+OS- AMI - OS
+Instance-type
+Key-pair
+
+
+
+
+Instance profile -- IAM Role + SSM -system Manager Agent
+
+SPLUNK-i-0e635250acbabec9d
+
+
+
+
+
+https://teams.microsoft.com/l/meetup-join/19:meeting_Zjg1OTdjZTctNzMwYy00NGYyLTg2OGQtZGVhOTliYWYwOTEz@thread.v2/0?context=%7B%22Tid%22:%228388296e-4ba9-4daf-9ded-97fdfe52842d%22,%22Oid%22:%2266b5da77-4065-4300-9ecc-f12991d6472a%22%7D
+
+
+Launch a new EC2 Instance (Window and Linux)
+Configure Terraform and AWS CLI
+Host a website with the instance
+check the instance meta data with 169.254.169.254
+Explain AMI and Keys Pair
+
+#!/bin/bash
+sudo yum install update -y
+sudo yum install httpd -y
+sudo service httpd start
+cd /var/www/html
+sudo wget https://www.free-css.com/assets/files/free-css-templates/download/page283/milina.zip
+sudo unzip medinova.zip
+sudo mv hospital-website-template/* .
+sudo rm -rf hospital-website-template
+sudo rm -rf medinova.zip
+
+Saturday
+==================================
+Default Tags     
+Specific Tags 
+AMI          
+EBS
+Instance Type t2. micro
+Key-Pair
+Network -Interface
+Security Group
+Instance Profile
+DNS Hostname Enabled
+Shutdown Behavior- Stop
+Termination Protection
+Metadata Version - V2
+UserData
+
+
+
+provider.tf
+
+
+
+

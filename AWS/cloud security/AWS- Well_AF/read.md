@@ -1,4 +1,4 @@
-### AWS Well-Architected Framework
+### AWS Well-Architected Framework 
 ====================================
 
 The Well-Architected Framework was developed to help you, as as customer, build secure, high-performing, resilient and efficient infrastructure for application.

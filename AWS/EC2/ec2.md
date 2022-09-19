@@ -24,13 +24,13 @@ Feature of EC2
 
 EC2 Pricing
 ==============
-1. On-demand Instances - 
+1. On-demand Instances -   100 
     - Pay by seconds for the instance you use up to a minute. 
     - No commitments or upfront payment
     - Minimum of 1 minute
-
+     28
 2. Savings Plans( compute, Ec2 Instance or SageMaker)
-    - Type Compute Savings up to 
+    - Type Compute Savings up to
     - COMPUTE Discounted amount up to 66% for compute( EC2 or Lambda or Fargate usage regardless of Region or Instance family)
     - Discounted amount up to 72% for EC2 saving(For a specific family of EC2 Instance in any AZ in a particular region only. )
     - Discounted amount up to 64% apply to sageMaker only regardless of region or 
@@ -55,7 +55,7 @@ EC2 Pricing
     - 
 5. Dedicate Hosts Pricing
     - Do not permit shared tenancy
-    - Useful fpr regulatory requirements that may not support multi-tenant virtualization
+    - Useful for regulatory requirements that may not support multi-tenant virtualization
     - Can be purchased On-Demand (hourly)
     - Can be Purchased as a Reserved for up to 70% discount Price.
 
