@@ -31,4 +31,4 @@ Packer - Third Party Tools
 
 There are community AMIs available; however, you run these at your own risk since there may be unknown packages installed on them.
 
-Another option is to use marketplace AMIs provided by vendors and partners that have vetted and known software already preconfigured. These AMIs often have an extra price per hour when running the instance. 
+Another option is to use marketplace AMIs provided by vendors and partners that have vetted and known software already pre-configured. These AMIs often have an extra price per hour when running the instance. 

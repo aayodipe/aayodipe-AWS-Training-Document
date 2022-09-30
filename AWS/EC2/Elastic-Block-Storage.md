@@ -14,8 +14,6 @@ Instance Store on the other hand is a storage device that is physically attached
 
 ## TYPE of EBS Volumes
 =======================
-
-
 There are three main type of EBS Volumes. They diff in term of their Performance and the cost.
 
 ## 1. Solid State Drive(SSD)
