@@ -5,11 +5,16 @@
     - Integrity
     - Availability
 2. Assume Breach
-3. Attack, Threat and Vulnerability
+3. Attack, Threat, *Risk* and Vulnerability
+    Attack - an unauthorized attempt to access a computer system or IT resources to either modify, steal or infiltrate data
+    Threat - Exploit a vulnerability
+    Vulnerability- Weakness in an hardware, software or procedure
+    Risk - A potential for lost or damaged or destroyed Asset
+
 4. Defense In Depth
 5. Least Privilege
 6. Supply Chain Security
-7. Attack Surface Reduction
+7. Attack Surface Reduction or Reduce blast radius
 8. Hard Coding
 9. Never Trust, Always Verify
 10. Back-up and Roll Back

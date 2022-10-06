@@ -29,7 +29,7 @@ Analyzing the event collected from changes in resources that not complete if the
 AWS provide multiple service or resources for every state of the detective control. In the next few hours we are going to be looking at some of these tools for each stage.
 
 ### 1.  RESOURCES STATE TOOLS
-=========================
+==============================
 The first state, resources state, focus on knowing the state of the monitored resources. AWS Config and AWS System Manager, are two of the AWS Tools that helps to monitored the changes in the state of the observable object.
 
 ## AWS Config

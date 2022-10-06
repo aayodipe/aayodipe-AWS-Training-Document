@@ -3,10 +3,12 @@ Module 10 - AWS VPC NetWorks
 	- VPC Subnets
 	- Route-Table
 	- VPC Internet Access - Internet Gateway
-	- Network Access Control Lists
+	- Security Group
+	- Nat Gateway
+	- Elastic Ip Address
 	- VPC Endpoints
-	- vPC Peerings
-	- AWS Transis Gateway
+	- VPC Peerings
+	- AWS Transist Gateway
 	- Site to Site VPN (Explain)
 	- AWS Direct Connect( Explain)
 	- AWS VPN (Explians)
