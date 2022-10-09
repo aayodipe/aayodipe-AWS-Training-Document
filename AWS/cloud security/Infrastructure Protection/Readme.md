@@ -10,8 +10,8 @@ To achieved the security objective of AWS Architected Framework, Infrastructure 
 
 The Topic to consider include:
 * Virtual Private Cloud
-    - Definition
-    - Special Type of IP address
+    - Definition 10.0.0.0/28= 30 ips 
+    - Special Type of IP address           10.0.1.0/24  : 10.0.1.0, 10.0.1.1,10.0.1.2,10.0.1.3,   
     - Reserved IPS 
         * 2nd address- Reserved for VPC Router( 10.0.0.1)
         * 3rd address- Reserved for DNS server( 10.0.0.2)
@@ -35,8 +35,8 @@ The Topic to consider include:
 * VPC Endpoint
     - Gateway Endpoint
     - Interface Endpoints
-* VPC Flowlog
+* VPC Flow log
 
 * Load Balancing
-* AWS Web Application
+* AWS Web Application firewall 
 * AWS Shield
