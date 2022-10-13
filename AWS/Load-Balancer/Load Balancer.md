@@ -103,5 +103,17 @@ Step 6. Setup Target Groups
 Step up the load balancer
 
 
+## Difference between NLB and ALB
+
+- NLB Operate at layer 4 i.e use TCP and UDP and TLC, ALB Operate at Layer 7 use http and https
+- NLB handle millions of requests per second
+- NLB is designed to handle traffic inbound to be deliver to application, ALB design for inbound traffic to be deliver to web server
+- Both could be internet-facing or Internal Only
+- With NLB you can only create TCP and UDP or Both 
+- NLB do not support Security Group but ALB does
+- NLB Support Cross-Zone Load Balancing, ALB does not
 
 
+## USE CASE OF NLB
+===============
+1. 

@@ -32,7 +32,7 @@ sudo service httpd start
 chkconfig httpd on
 sudo service httpd enable
 cd www/html
-sudo echo "This is MWeb-1" > index.html
+sudo echo "<h1>This is cornelis page</h1>" > index.html
 sudo echo "This is order page of MWeb-1" > order.html
 
 
