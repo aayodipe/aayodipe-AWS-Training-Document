@@ -10,6 +10,7 @@ sudo wget https://www.free-css.com/assets/files/free-css-templates/download/page
 sudo unzip pro.zip
 sudo mv pro-html/* .
 sudo rm -rf pro*
+cd ~
 
 
 
@@ -35,5 +36,9 @@ cd www/html
 sudo echo "<h1>This is cornelis page</h1>" > index.html
 sudo echo "This is order page of MWeb-1" > order.html
 
-
-Path base routin
+### Ubuntu OS
+#!/bin/bash
+sudo apt-get update
+sudo apt-get install apache2 -y
+sudo cd /var/www/html
+echo "Welcome to Autoscaling tutorial site" > index.html

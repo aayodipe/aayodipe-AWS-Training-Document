@@ -19,8 +19,8 @@ Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web 
 ## Main usage of AWS Route 53
 ===============================
 1. Register domain names
-2. Route internet traffic to the resources for your domain
-3. Check the health of your resources
+2. Domain Name System Route internet traffic to the resources for your domain
+3. Check the health of your resources such as EC2
 
 
 
@@ -35,9 +35,20 @@ Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web 
 
 
 
-# 2. Route internet traffic to the resources for your domain
+# 2. DNS Service i.e Route Traffic to your AWS Resources
 =============================================================
-# how you configure Amazon Route 53 to route internet traffic for your domain
+# Component of Route 53 DNS
+===========================
+#    Hosted Zone - A container that contains entire routing information for your domain and subdomain
+
+        - Public hosted zone 
+            A container that holds information about how you want to route traffic on the internet for a specific domain, such as example.com, and its subdomains (acme.example.com, zenith.example.com). After you create a hosted zone, you create records that specify how you want to route traffic for the domain and subdomains.
+
+        - Private hosted Zone
+
+
+
+
 ## Routing policy
     A setting for records that determines how Route 53 responds to DNS queries. Route 53 supports the following routing policies:
 
@@ -71,5 +82,6 @@ Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web 
     Use to route traffic to multiple resources in proportions that you specify.
 
 # 3. Check the health of your resources
+
 
 

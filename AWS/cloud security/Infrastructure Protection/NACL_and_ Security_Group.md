@@ -1,4 +1,4 @@
-## Network Access Control Lists(Network ACL)
+## Network Access Control Lists(Network ACLs)
 ===========================================
 Network Access Control Lists(Network ACL) acts as a firewall at the subnet level. A network access control list (Network ACL) allows or denies specific inbound or outbound traffic at the subnet level. When you create a VPC, a default Network ACL is automatically create. You can use the default network ACL for your VPC, or you can create a custom network ACL for your VPC with rules that are similar to the rules for your security groups in order to add an additional layer of security to your VPC.
 
