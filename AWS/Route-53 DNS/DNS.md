@@ -19,7 +19,7 @@ Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web 
 ## Main usage of AWS Route 53
 ===============================
 1. Register domain names
-2. Domain Name System Route internet traffic to the resources for your domain
+2. Domain Name System- Route internet traffic to the resources for your domain
 3. Check the health of your resources such as EC2
 
 

@@ -42,3 +42,13 @@ sudo apt-get update
 sudo apt-get install apache2 -y
 sudo cd /var/www/html
 echo "Welcome to Autoscaling tutorial site" > index.html
+
+
+
+"S3:GetAccessPoint"
+"s3:ListAllMyBuckets"
+"s3:ListAccessPoints"
+"s3:ListMultiRegionAccessPoints"
+"s3:ListBucket"
+
+
