@@ -1,20 +1,174 @@
+// 1. Give access to all buckets, prefix and objects using bucket policy
+// AccessToAllBucketAndObject
 {
-    "Name": "Data-Event",
-    "S3BucketName": "demo2391",
-    "IncludeGlobalServiceEvents": false,
-    "IsMultiRegionTrail": false,
-    "TrailARN": "arn:aws:cloudtrail:us-east-1:238569211277:trail/Data-Event",
-    "LogFileValidationEnabled": false,
-    "IsOrganizationTrail": false,
-    "ResponseMetadata": {
-        "RequestId": "0ede0c27-3e15-4f40-9e19-0abd98b3518c",
-        "HTTPStatusCode": 200,
-        "HTTPHeaders": {
-            "x-amzn-requestid": "0ede0c27-3e15-4f40-9e19-0abd98b3518c",
-            "content-type": "application/x-amz-json-1.1",
-            "content-length": "242",
-            "date": "Mon, 05 Sep 2022 23:29:04 GMT"
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AccessToAllBucketAndObject",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+// Give full access to a specific bucket and prefix and object in it  (use url of the bucket).
+// FullAccessToASpecificBucketAndObjects
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::demompre",
+                "arn:aws:s3:::demompre/*"
+            ]
+        }
+    ]
+}
+
+// Give Limited access(ListBucket and ListAllMyBuckets) to a specific bucket and prefix and object in it  (use url of the bucket).
+// LimitedAccessToASpecificBucketAndObjects
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::demompre"
         },
-        "RetryAttempts": 0
-    }
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*"
+        }
+    ]
+}
+// Deny FullAccessToASpecificBucket
+// Denied access to a specific bucket but allow access to every other bucket
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DenyFullAccessToASpecificBucket",
+            "Effect": "Deny",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::demompre"
+        },
+        {
+            "Sid": "AllowFullAccessToAllBucket",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*"
+        }
+    ]
+}
+
+// DenyAccessToASpecificFolder
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Deny",
+            "Action": "s3:*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::fbi-buckets",
+            "Condition": {
+                "StringEquals": {
+                    "s3:prefix": "secret/",
+                    "s3:delimiter": "/"
+                }
+            }
+        }
+    ]
+}
+
+
+//DenyAccessToNestedFolder
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Deny",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::fbi-buckets",
+            "Condition": {
+                "StringEquals": {
+                    "s3:prefix": [
+                        "secret/more-secret/"
+                    ],
+                    "s3:delimiter": "/"
+                }
+            }
+        }
+    ]
+}
+
+//  Delete a Specific nexted file
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Deny",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::fbi-buckets/secret/more-secret/secret-doc.txt"
+        }
+    ]
+}
+
+// ========================================================================
+// Bucket Policies
+//  denied access for a specific bucket using bucket policies
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::238569211277:user/limited-access-user"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::fbi-buckets"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Deny",
+            "Principal": {
+                "AWS": "arn:aws:iam::238569211277:user/limited-access-user"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::fbi-buckets/secret/more-secret/secret-doc.txt"
+        }
+    ]
 }

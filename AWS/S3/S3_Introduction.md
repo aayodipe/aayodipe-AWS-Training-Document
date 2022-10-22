@@ -17,7 +17,7 @@ S3 Topics we would cover includes:
 
 # What is a S3 Bucket?
 =======================
-A bucket is a container for objects. An object is a file and any metadata that describes
+A bucket is a container for objects. An object is a file and any metadata that describes it.
 
 To store an object in Amazon S3, you create a bucket and then upload the object to the bucket. When the object is in the bucket, you can open it, download it, and move it. When you no longer need an object or a bucket, you can clean up your resources.
 
@@ -43,6 +43,10 @@ A  key or key prefix is a string of characters that can be the complete path in 
 
 For example, if you were storing information about cities, you might naturally organize them by continent, then by country, then by province or state. Because these names don't usually contain punctuation, you might use slash (/) as the delimiter. The following examples use a slash (/) delimiter.
 
+# Ways to Identify an object in a Bucket
+======================================
+1. Key - which is the object name 
+2. Version ID( if S3 version is enabled)
 # Working With Large Objects
 =============================
 - Unlimited amount of data  can be store in an S3 Bucket 

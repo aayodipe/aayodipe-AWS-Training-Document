@@ -82,11 +82,11 @@ Module 10 - AWS VPC NetWorks
 	- VPC Internet Access - Internet Gateway
 	- Network Access Control Lists
 	- VPC Endpoints
-	- vPC Peerings
-	- AWS Transis Gateway
+	- VPC Peering
+	- AWS Transit Gateway
 	- Site to Site VPN (Explain)
 	- AWS Direct Connect( Explain)
-	- AWS VPN (Explians)
+	- AWS VPN (Explain)
 	- Documentations
 	- Projects
 
