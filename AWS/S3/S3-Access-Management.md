@@ -41,7 +41,7 @@ If Block public access is enabled, no public access would be allow to S3 Resourc
 
 
 Demo
-ListBucket -permission
+ListBucket permission
 =========================
 
 1. Give access to all buckets, prefix and objects using bucket policy [done]
