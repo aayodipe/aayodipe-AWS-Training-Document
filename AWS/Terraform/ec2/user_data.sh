@@ -12,7 +12,7 @@ sudo mv pro-html/* .
 sudo rm -rf pro*
 cd ~
 
-
+System status and instance status
 
 #!/bin/bash
 cd /tmp
