@@ -43,7 +43,38 @@
 
 # DATA STRUCTURE
 # =============
-                                             
-hobbie = ["orange", "n" , "apple", "grape", 80, True, ["boy", "girl"]]
-question = "What is the first hobby of kola"
-print(hobbie[6][0])
+# 1. Selecting Item from the List     
+# 2. Add Item to the end of the List
+# 3. Remove Item from the end of the List                        
+# hobbie = ["orange", "n" , "apple", "grape", 80, True, ["boy", "girl"]]
+# question = "What is the first hobby of kola"
+# print(hobbie[6][0])
+  
+# dynamically type - Change the type of value or assign a different type of value to it e.g greeting = 'Hi',greetings = 32
+# Statically Type - a[int] = 0
+
+            # 0           1       2       3       4             5
+# fruits[-5]
+# fruits[-2]
+# fruits[-1]
+
+# getNumber1 = int(input('choose one number?'))
+# getNumber2 = int(input('choose second number ?'))
+# sunInput = getNumber1 + getNumber2
+# print(fruits[sunInput])
+
+# Working With Count
+# ======================
+# print(len(fruits))
+users =['ola','oochay','Kola',"Paul",'henry',"vivien","Wole",'Ariyo']
+selectUserHenry =[]
+
+# print(fruits)
+
+for user in users:
+    print("hi " + user)
+    print('How are you today '+ user + '?')
+    if user == "henry":
+        selectUserHenry.append(user)
+        print(selectUserHenry)
+    print('==============================================')
