@@ -1,0 +1,27 @@
+Intro to Python
+===================
+1. Datatype in Python
+	- String
+	- Number
+	- Float
+	- Boolean
+	- None
+2. Variable (Dynamically typed)
+3. Operations 
+4. Quotes in Python('',"",'''  ''')
+	- Single Quoted String
+	- Double Quoted String
+	- Triple Quoted String
+5. Assignment 
+6. Getting Value from Users
+7. Control Statements
+		- If Statement
+		- If... else
+		- if...else
+8. Getting User's Input
+9. List
+		- Accessing individual list Item index or negative index stating with -1
+		- Access list value with an expression such as list[2+4]
+		- Get the total Item in a list with 'len'
+		- Addition Value to list
+			 - for number in range (1,6)
