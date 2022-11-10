@@ -66,15 +66,87 @@
 # Working With Count
 # ======================
 # print(len(fruits))
-users =['ola','oochay','Kola',"Paul",'henry',"vivien","Wole",'Ariyo']
-selectUserHenry =[]
+# users =['ola','oochay','Kola',"Paul",'henry',"vivien","Wole",'Ariyo']
+# selectUserHenry =[]
 
 # print(fruits)
 
-for user in users:
-    print("hi " + user)
-    print('How are you today '+ user + '?')
-    if user == "henry":
-        selectUserHenry.append(user)
-        print(selectUserHenry)
-    print('==============================================')
+# for user in users:
+#     print("hi " + user)
+#     print('How are you today '+ user + '?')
+#     if user == "henry":
+#         selectUserHenry.append(user)
+#         print(selectUserHenry)
+#     print('==============================================')
+
+
+# ===================================================================
+
+# 11/09/2020
+
+# # x = "c o r rection"[0:2]
+# x = "39474393 983488340 89343039 839498t9083"
+# print(x.split())
+
+# name = "adeyemi" 
+# modifiedname = name.replace("a", "A")
+# print(modifiedname)
+
+
+# Contatenation
+# ==================
+# greeting = 'Hello ' 
+# name = "yemi"
+
+# print(greeting + name )
+# name = "Bola"
+# age = 3
+# height = "3.3"
+# "The name of  my son is" + name + "he is " + age 
+# number = 5
+# 'I have ' + number  + 'dogs'
+
+# number = 1
+# color = black
+# f'I have {number} {color} dog'
+
+# word = "I\'m a man"
+# print(word)
+
+# # working with boolean
+# True or False 
+# number1 = input('What is first number')
+# number2= input('What is second number')
+
+# if number1 > number2:
+#     print( True) 
+
+
+# # list       -7-6-5-4-3-2-1
+# # =======     0 1 2 3 4 5 6
+# numberList = [2,4,6,8,0,4,2]
+
+# a = numberList[0] 
+# b = numberList[2] 
+# c = numberList[-1] 
+# d = numberList[2:4]
+# e = numberList[:4]
+# # print(a,b,c)
+# print(e)
+
+users = ["ao","b","co","ao","b","c"]
+newusers = []
+# for user in users:
+#     print(user)          
+#     print(f'greeting {user}')   
+    
+kola = "a man"
+
+def greet_man():
+    for user in users:
+        if user == "ao":
+            newusers.append(user)
+    return newusers
+
+
+print(greet_man())
