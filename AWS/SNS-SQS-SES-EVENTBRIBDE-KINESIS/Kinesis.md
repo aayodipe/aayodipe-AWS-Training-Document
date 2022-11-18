@@ -94,3 +94,4 @@ Collecting Data and moving Data from point A to point B.
 
 # If Amazon Redshift can fit your needs, then use it rather than Hadoop. Redshift is simpler to use because it presents itself as a standard SQL database that you can get going in a few minutes. All the cluster stuff is behind-the-scenes and you don't have to know much to use it.
 
+Visit Documentation to learn more.
