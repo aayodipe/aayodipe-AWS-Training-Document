@@ -1,0 +1,29 @@
+Terraform Installation
+Terraform Configuration
+Terraform Provider Object type
+	- single provider
+	- multiple provider
+Terraform Resources Object type
+Terraform Data Object type
+Terraform Variables
+Terraform State
+Terraform Workspaces
+Terraform Providers
+Terraform Module
+
+
+Vulnerability Management - Qualys Vulnerability Management tool or Tenable Nessus
+=================================
+How do you carry out Vulnerability Management? 
+
+1. Scan the systems for Vulnerability
+		a. Identify all the systems or few systems that needed to be scanned by answering a few questions such as:
+			i. What is the data classification of the information stored, processed, or transmitted by the system? 
+			ii. Is the system exposed to the Internet or other public or semipublic networks? 
+			iii. What services are offered by the system? 			iv. Is the system a production, test, or development system?
+
+2. We also use Automation Tools to scan for the system that will be scanning. One of the tools we use is Qualys  Vulnerability scanner and the result is supplemented with additional information about the type of system and the information it handles.
+
+
+
+Cloud Monitoring - CloudWatch/Opsview

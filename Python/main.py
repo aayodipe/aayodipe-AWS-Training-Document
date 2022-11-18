@@ -46,9 +46,9 @@
     # using individual item in a list
 
 
-num = [1,2,4]
-num.insert(2, 3)
-print(num)
+# num = [1,2,4]
+# num.insert(2, 3)
+# print(num)
 
 
 # VARIABLE RULES
@@ -62,5 +62,3 @@ print(num)
     # Variable names should be short but descriptive. For example, name is better than n, student_name is better than s_n, and name_length is better than length_of_persons_name.
 
     # Be careful when using the lowercase letter l and the uppercase letter O because they could be confused with the numbers 1 and 0.
-
-
