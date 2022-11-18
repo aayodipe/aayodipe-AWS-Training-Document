@@ -1,17 +1,3 @@
-Terraform Installation
-Terraform Configuration
-Terraform Provider Object type
-	- single provider
-	- multiple provider
-Terraform Resources Object type
-Terraform Data Object type
-Terraform Variables
-Terraform State
-Terraform Workspaces
-Terraform Providers
-Terraform Module
-
-
 Vulnerability Management - Qualys Vulnerability Management tool or Tenable Nessus
 =================================
 How do you carry out Vulnerability Management? 
