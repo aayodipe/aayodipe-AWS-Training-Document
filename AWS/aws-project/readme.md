@@ -8,7 +8,7 @@ You have been tasked to ensure the following for a new Project:
 
 # For Production VPC:
 ====================
-1. Design and build a Four-tier Architecture. DONE
+1. Design and build a Five-tier Architecture. DONE
 2. Create five subnets. Four of the Subnets should be Private with prod-app-sb-1 prod-app-sb-2, prod-DB-cache-sb, and prod-DB-sb and the last one should be a public subnet and name prod-web-sb. Configure the Subnet to have a 1 Public Route and 4 Private Route each for one subnets- DONE
 3. Launch Instances in all the subnets and name them with the same name as the subnet they are launched in.- DONE
 4. Allow the database cache and the database to send internet requests.- DONE
