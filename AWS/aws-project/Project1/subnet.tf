@@ -1,0 +1,11 @@
+resource "aws_subnet" "main" {
+  for_each = 
+  vpc_id     = aws_vpc.production.id  
+  cidr_block = "10.0.1.0/24"
+
+  tags = {
+    Name        = "Main"
+    environment = "production"
+  }
+}
+
