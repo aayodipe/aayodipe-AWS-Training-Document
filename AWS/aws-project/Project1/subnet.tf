@@ -2,8 +2,8 @@
 # meta-augement
 # 1. count
 # 2. for-each
-        # - toset
-        # - map
+# - toset
+# - map
 # locals {
 # subnet_cidr_block_map  = {
 #     prod-web-sb = "10.0.0.0/24",
@@ -63,9 +63,9 @@
 
 # Production Public Subnet -Az1a
 resource "aws_subnet" "prod-public-subnet-1a" {
-  vpc_id     = aws_vpc.prod-vpc.id
-  cidr_block = "10.0.0.0/24"
-  availability_zone = "us-east-1a"
+  vpc_id                  = aws_vpc.prod-vpc.id
+  cidr_block              = "10.0.0.0/24"
+  availability_zone       = "us-east-1a"
   map_public_ip_on_launch = true
 
   tags = {
@@ -74,10 +74,10 @@ resource "aws_subnet" "prod-public-subnet-1a" {
 }
 
 # Production Private Subnet1 -Az-1a
-resource "aws_subnet" "prod-private-subnet1-1a" {
-  vpc_id     = aws_vpc.prod-vpc.id
-  cidr_block = "10.0.1.0/24"
-  availability_zone = "us-east-1a"
+resource "aws_subnet" "prod-web-sb" {
+  vpc_id                  = aws_vpc.prod-vpc.id
+  cidr_block              = "10.0.1.0/24"
+  availability_zone       = "us-east-1a"
   map_public_ip_on_launch = false
 
   tags = {
@@ -86,9 +86,9 @@ resource "aws_subnet" "prod-private-subnet1-1a" {
 }
 # Production Private Subnet2 -Az-1a
 resource "aws_subnet" "prod-private-subnet2-1a" {
-  vpc_id     = aws_vpc.prod-vpc.id
-  cidr_block = "10.0.2.0/24"
-  availability_zone = "us-east-1a"
+  vpc_id                  = aws_vpc.prod-vpc.id
+  cidr_block              = "10.0.2.0/24"
+  availability_zone       = "us-east-1a"
   map_public_ip_on_launch = false
 
   tags = {
@@ -97,9 +97,9 @@ resource "aws_subnet" "prod-private-subnet2-1a" {
 }
 # Production Private Subnet3 -Az-1a
 resource "aws_subnet" "prod-private-subnet3-1a" {
-  vpc_id     = aws_vpc.prod-vpc.id
-  cidr_block = "10.0.3.0/24"
-  availability_zone = "us-east-1a"
+  vpc_id                  = aws_vpc.prod-vpc.id
+  cidr_block              = "10.0.3.0/24"
+  availability_zone       = "us-east-1a"
   map_public_ip_on_launch = false
 
   tags = {
@@ -108,9 +108,9 @@ resource "aws_subnet" "prod-private-subnet3-1a" {
 }
 # Production Private Subnet4 -Az-1a
 resource "aws_subnet" "prod-private-subnet4-1a" {
-  vpc_id     = aws_vpc.prod-vpc.id
-  cidr_block = "10.0.4.0/24"
-  availability_zone = "us-east-1a"
+  vpc_id                  = aws_vpc.prod-vpc.id
+  cidr_block              = "10.0.4.0/24"
+  availability_zone       = "us-east-1a"
   map_public_ip_on_launch = false
 
   tags = {

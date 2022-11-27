@@ -85,10 +85,10 @@ Three are multiple ways to access IAM
 
 TERMS of IAM
 ================
-There are some terms that you need to be farmiliar with in AWS IAM 
+There are some terms that you need to be familiar with in AWS IAM 
 
 a. IAM Resources
-		- Users, 
+	 - Users, 
      - Groups,  
      - Roles, 
      - Policy, 

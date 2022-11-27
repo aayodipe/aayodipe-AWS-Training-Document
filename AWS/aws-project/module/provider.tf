@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "container123020"
-    key            = "dev/terraform.tfstate"
+    key            = "stage/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraformbackend"
   }

@@ -48,3 +48,17 @@ You are tasked to:
 3. Build two EBS volumes and attached to the instance in the us-east-1(N.Virginia) regions
 4. Delete one volume after detaching it and extend the size of the other volume
 5. Take a Backup of this EBS volume
+
+
+# Project 3:
+=====================
+# Project Tasks
+==================
+Task 1: Create an Organization using AWS account.
+Task 2: Invite an existing AWS account as member account to the AWS Organization and create a new aws account with organization.
+Task 3: Create a member account within an Organization.
+Task 4: Create Organizational Unit inside AWS Organization
+Task 5: Architect Custom Service Control Policy for member accounts inside an Organization
+Task 6: Attach Service Control Policy to member accounts
+Task 7: Create Cloud Trail and configure it to log data for all accounts in an Organization to S3/CloudWatch 
+Task 8: Switch Roles between Member account and Management account.

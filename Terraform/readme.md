@@ -122,3 +122,53 @@ Demo 2.
 8. Create  an Elastic IP  Address (This depend on IGW so depend_on is required)
 9. Create an EC2 Instance with EIP Attached
 
+# Terraform Command
+ - fmt
+ - validate
+ - init
+ - plan
+ - apply
+ - destroy
+ - state list - show all the resources that have been created with tf.state
+ - refresh - update the tf.state with the changes made outside of the terraform file such as changes done manually from console
+        - Terraform plan ==> terraform refresh ==> terraform show
+  - force-unlock
+     <!-- terraform force-unlock LockID -->
+ - show - show all the tfstate. Use this to get the name of a resources if you want to taint a resource
+ - taint - To mark a replace marker to a resources
+ - untaint - remove tainted object
+ - -target=resourceName
+
+ # Workspace - Use to create multiple working directories to maintain multiple instances of a configuration with completely separate state data
+
+ A common use for multiple workspaces is to create a parallel, distinct copy of a set of infrastructure to test a set of changes before modifying production infrastructure.
+
+ Every initialized working directory starts with one workspace named default.
+
+Use the terraform workspace list, terraform workspace new, and terraform workspace delete commands to manage the available workspaces in the current working directory.
+
+Use the terraform workspace select command to change the currently selected workspace. For a given working directory, you can only select one workspace can be at a time. Most Terraform commands only interact with the currently selected workspace. This includes provisioning and state manipulation.
+ =============
+ Workspace commands
+    - Terraform workspace
+        * show - show current workspace
+        <!-- terraform workspace show -->
+        * list - The terraform workspace list command is used to list all existing workspaces.
+        <!-- terraform workspace list -->
+        * new  <workspaceName>- create a new workspace
+        <!-- terraform workspace new dev -->
+        * select - terraform select [dir] The terraform workspace select command is used to choose a different workspace to use for further operations. 
+         <!-- terraform workspace select dev -->
+        * delete - delete a workspace
+        <!-- terraform workspace delete dev -->
+
+
+Terraform Ignore  
+
+
+# State Management
+====================
+
+
+Desire State - Where you want to be
+Current State - Where you are currently

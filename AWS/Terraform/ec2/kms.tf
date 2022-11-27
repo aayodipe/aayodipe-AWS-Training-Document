@@ -5,3 +5,20 @@
 #     "Name" = "Terraform-Key"
 #   }
 # }
+
+
+resource "aws_instance" "name" {
+  ami = var.ami
+  instance_type = var.instance_type
+  key_name = var.key_name
+  iam_instance_profile = var.iam_instance_profile
+  availability_zone = var.availability_zone
+
+  lifecycle {
+    create_before_destroy = var.create_before_destroy
+  }
+
+#   validation = {
+#     varify_ami = var.verify_ami
+#   }
+}
