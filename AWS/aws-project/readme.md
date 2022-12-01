@@ -24,10 +24,6 @@ You have been tasked to ensure the following for a new Project:
 5. Ensure highly secure Security Group using AWS Best Practice for Security Groups
 6. Setup a connection between the prod-db-sb and dev-db-sb
 
-
-
-
-
 # Project 2: 
 ==================================================================
 
@@ -62,3 +58,50 @@ Task 5: Architect Custom Service Control Policy for member accounts inside an Or
 Task 6: Attach Service Control Policy to member accounts
 Task 7: Create Cloud Trail and configure it to log data for all accounts in an Organization to S3/CloudWatch 
 Task 8: Switch Roles between Member account and Management account.
+
+
+# Project 4 -  Designing a serverless web backend on AWS
+==============
+Josh works at  Company XZY that sells cleaning product online. XYZ currently have an application that processes order online and it is experiencing some issue, XYZ would like to find a solution that bring better resiliency, reduce operational overhead and as well as migrating the service to AWS. You have being tapped to help the company to architect the solution to the problem the company is facing.
+
+You are expected to use services such as AWS Lambda, SQS, SNS, API gateway and more.
+
+# Related Project: https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/
+# Solution
+===========
+Step 1: You will first hear from the customer about their requirements and the problems that they are trying to solve with this migration. 
+
+Step 2: Design the solution for this use case
+
+Step 3: Create a POC using services such as 
+    - Amazon API Gateway
+    - AWS Lambda
+    - Amazon Simple Queue Service (Amazon SQS) 
+    - Amazon Simple Notification Service (Amazon SNS) 
+    - Amazon DynamoDB.
+# Resume Bullet Point - Architect or Design a highly resilience and decoupled serverless web backend solution on AWS
+
+
+
+# Project 5 - Designing a serverless data analytics solution on AWS
+============
+You have been sent to help a customer that use QR code for loading restaurant menus. This customer wants to enhance their products by adding data analysis for better business intelligence solutions. Your tasked as AWS Solutions Architects is to provide AWS services that can help the customer to achieve his goals and also Architect the solutions for the customer.
+
+Hint: The goal of the task is for your to learn AWS Data Analytics services like Amazon Athena, Amazon Kinesis, Amazon QuickSight, and more. 
+
+# Project 6: - Designing a hybrid solution for container based workloads on AWS
+==============
+
+ASL LLC, an insurance company has some workloads running on premises they want to migrate to hybrid environment that is some of the workloads will remain on premise while the remaining would be migrated to AWS public Cloud. You have been informed advice the client on aws services that they would need in other to create a connection between on premise networking and the cloud.
+
+# Project 7 - Designing a solution following account governance and management best practices
+==============
+
+A company in need of multi-account environment currently has everything running in the same account, while providing workloads for its own clients. YOu have been tasked to use AWS service such as centralized logging, multi-account strategies, and account vending machine, all powered by AWS managed services for governance and security, like AWS Organizations, IAM Identity Center, AWS Service Catalog, AWS CloudTrail, and more to designed a solution for the client. 
+
+
+Word of Advice
+===============
+The Purpose of all the projects are to let you know that AWS has a lot of different services, and figuring out which ones to use when, and assemble them into a solution that meets a set of requirements, is something that you need to be familiar with and practice.
+
+Also, they are all designed to help you understand the differences between the AWS services and which to use for a particular use case.

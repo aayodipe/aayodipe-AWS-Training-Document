@@ -91,11 +91,3 @@ Solutions Architect Points
 
 
 
-LInkedIn Creation
-====================================
-
-1. If you have 2 LinkedIn Account:
- Old ===> Leave as It is
- New ===> yemi Ayodipe / jimi Aladetohun
-
-

@@ -148,16 +148,5 @@ Steps:
 8. 
 
 
-
-
-os 
-instance-type
-storage
-security group
-key pair
-Tag
-
-
-Standard Monitoring and Detailed Monitoring
-
-
+# Related Compute Service
+# https://ecsworkshop.com/introduction/
